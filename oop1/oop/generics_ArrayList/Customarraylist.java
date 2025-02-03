@@ -1,6 +1,6 @@
-package oop.generic_ArrayList;
+package generics_ArrayList;
 
-class Customarraylist{
+public class Customarraylist {
     private int[] array;
     private int defaultsize=10;
     private int size=0;
@@ -43,5 +43,4 @@ class Customarraylist{
         list.display();
 
     }
-
 }
