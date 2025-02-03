@@ -10,5 +10,6 @@ class main implements A,B {
         main main = new main();
         main.fun();
         main.greet();
+        System.out.println("hello");
     }
 }
