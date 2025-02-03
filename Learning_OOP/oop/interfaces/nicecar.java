@@ -1,14 +1,14 @@
 package interfaces;
 
 public class nicecar {
-    private engine e;
+    private auto e;
 
-    public nicecar(engine e) {
+    public nicecar(auto e) {
 
         this.e = new auto();
     }
 
-    public void upgradeto(engine e) {
+    public void upgradeto(auto e) {
         this.e = e;
     }
 
