@@ -17,4 +17,8 @@ public class Student implements Comparable<Student> {
         int diff=(int)this.marks-o.marks;
         return diff;
     }
+
+
+
 }
+
