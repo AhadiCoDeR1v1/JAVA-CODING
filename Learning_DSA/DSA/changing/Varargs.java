@@ -6,5 +6,6 @@ public class Varargs {
     }
     static void fun(int ...v){
         System.out.println(v.length);
+
     }
 }
