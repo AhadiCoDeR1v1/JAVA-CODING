@@ -1,11 +1,16 @@
 package LL.Doubly;
 
 public class DLL {
-    Node head;
+   private Node head;
+   private int size;
+   public DLL() {
+       this.size=0;
+   }
     public void insertatfirst(int value){
         Node node =new Node(value);
         if(head==null){
             head=node;
+            size++;
             return;
         }
         else{
@@ -14,13 +19,36 @@ public class DLL {
             head.prev=node;
             head=node;
         }
+        size++;
     }
     public void display(){
         Node node =head;
         while(node!=null){
-            System.out.println(node.val + " -> ");
+            System.out.print(node.val + " -> ");
             node=node.next;
         }
+    }
+    public void insertatspec(int index,int valuetoinsert){
+       Node node =new Node(valuetoinsert);
+       if(head==null){
+           head=node;
+           size++;
+           return;
+       }
+       else{
+           Node temp=head;
+           int tempindex=0;
+           while(tempindex!=index-1){
+               temp=temp.next;
+               tempindex++;
+           }
+           node.next=temp.next;
+           temp.next=node;
+           node.prev=temp;
+           node.next.prev=node;
+
+           size++;
+       }
     }
     private class Node {
         int val;
