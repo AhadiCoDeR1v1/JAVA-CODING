@@ -2,6 +2,7 @@ package Factorialsusingthreads;
 
 public class Factorials {
     int fact;
+
      Factorials(){
 
     }
