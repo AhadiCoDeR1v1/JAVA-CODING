@@ -1,0 +1,2 @@
+// so in the jframe there are many things now it jslider for that sliding to enter the value and now i am on jprogress bar which is a good practice to show the user that ssomething is processing now i am how to make the menus
+//
